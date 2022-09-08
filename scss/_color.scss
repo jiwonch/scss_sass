@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+$myPink: #ee82ee;
+$myBlue: #4169e1;
+$myGreen: #8fbc8f;
+
+ul{
+    li{
+        &:first-child a{
+            color: $myPink;
+        }
+        &:nth-child(2) a{
+            color: $myBlue;
+        }
+        &:nth-child(3) a{
+            color: $myGreen;
+        }
+    }
+}

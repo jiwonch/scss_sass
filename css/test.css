@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul li:first-child a {
+  color: #ee82ee;
+}
+ul li:nth-child(2) a {
+  color: #4169e1;
+}
+ul li:nth-child(3) a {
+  color: #8fbc8f;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  color: green;
+}
+
+.box {
+  font-weight: bold;
+  font-size: 10px;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.box1 {
+  background: #111;
+}
+.box2 {
+  background: #111;
+}
+
+.section {
+  width: 100%;
+}
+.section .list {
+  padding: 20px;
+}
+.section .list li:last-child {
+  margin-right: 0;
+}

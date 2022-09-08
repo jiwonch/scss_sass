@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+// @mixin은 선언임 선언해주것 가지고는 아무 효과도 없음
+// 선언해줘야지 의미가 생김
+@mixin important_text{
+    color: red;
+    font: {
+        size: 25px;
+        weight: bold;
+    };
+    border: 1px solid blue;
+}
+
+.danger{
+    @include important_text;
+}
+
+@mixin box{
+    width: 100px;
+    height: 100px;
+    margin: {
+        top: 10px;
+        left: 20px;
+    };
+    padding: 10px;
+}
+
+@mixin border($width, $color) {
+    border: $width solid $color;
+}
+
+.box{
+    &1 {
+        @include box;
+        @include border(1px, #333);
+    }
+    &2 {
+        @include box;
+        @include border(5px, orange);
+    }
+}
+

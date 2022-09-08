@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "reset", "color";
+
+$mainColor : red;
+$Color : green;
+
+h1{
+    color: $mainColor;
+}
+
+p{
+    color: $Color;
+}
+
+.box{
+    font: {
+        weight: bold;
+        size: 10px;
+        family: sans-serif;
+    };
+
+    margin: {
+        top: 10px;
+        left: 20px;
+    };
+    &1{
+        $color: #111 !global;
+        background: $color;
+    }
+    &2{
+        background: $color;
+    }
+}
+
+.section{
+    width: 100%;
+    .list{
+        padding: 20px;
+        li{
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+
